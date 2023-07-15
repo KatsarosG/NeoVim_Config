@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
 		requires = {{'nvim-lua/plenary.nvim'}}
 	}
 
-	if packer_bootstrap then
+if packer_bootstrap then
 		require('packer').sync()
 	end
 end)
