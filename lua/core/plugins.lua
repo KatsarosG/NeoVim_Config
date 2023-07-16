@@ -28,6 +28,12 @@ return require('packer').startup(function(use)
 		tag = '0.1.0',
 		requires = {{'nvim-lua/plenary.nvim'}}
 	}
+	--completion
+	use 'hrsh7th/nvim-cmp'
+	use 'hrsh7th/cmp-nvim-lsp'
+	use 'L3MON4D3/LuaSnip'
+	use 'saadparwaiz1/cmp_luasnip'
+	use 'rafamadriz/friendly-snippets'
 
 	if packer_bootstrap then
 		require('packer').sync()
