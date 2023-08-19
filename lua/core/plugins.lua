@@ -34,7 +34,11 @@ return require('packer').startup(function(use)
 	use 'L3MON4D3/LuaSnip'
 	use 'saadparwaiz1/cmp_luasnip'
 	use 'rafamadriz/friendly-snippets'
-
+	--startUp Message
+	use {
+    	"eoh-bse/minintro.nvim",
+    	config = function() require("minintro").setup({ color = "#000000" }) end
+	}
 if packer_bootstrap then
 		require('packer').sync()
 	end
