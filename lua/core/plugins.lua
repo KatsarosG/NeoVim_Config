@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
     	"eoh-bse/minintro.nvim",
     	config = function() require("minintro").setup({ color = "#000000" }) end
 	}
+	use 'christoomey/vim-tmux-navigator'
 if packer_bootstrap then
 		require('packer').sync()
 	end
