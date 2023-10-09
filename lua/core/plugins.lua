@@ -12,6 +12,7 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
+	--Plugin Location: ~/.local/share/nvim/site/pack/packer
 	use 'wbthomason/packer.nvim'
 	use 'nvim-tree/nvim-tree.lua'
 	use 'nvim-tree/nvim-web-devicons'
@@ -37,7 +38,7 @@ return require('packer').startup(function(use)
 	--startUp Message
 	use {
     	"eoh-bse/minintro.nvim",
-    	config = function() require("minintro").setup({ color = "#000000" }) end
+    	config = function() require("minintro").setup({ color = "#98c379" }) end
 	}
 	use 'christoomey/vim-tmux-navigator'
 if packer_bootstrap then
