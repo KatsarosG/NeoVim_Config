@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
 		tag = '0.1.0',
 		requires = {{'nvim-lua/plenary.nvim'}}
 	}
+	use 'christoomey/vim-tmux-navigator'
 	--completion
 	use 'hrsh7th/nvim-cmp'
 	use 'hrsh7th/cmp-nvim-lsp'
