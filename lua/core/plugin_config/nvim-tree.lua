@@ -4,13 +4,13 @@ vim.g.loaded_netewPlugin = 1
 require("nvim-tree").setup({
 	sort_by = "case_sensitive",
 		view = {
-			width = 30,
+			width = 25,
 		},
 		renderer = {
 			group_empty = true,
 		},
 		filters = {
-			dotfiles = true,
+			enable = false,
 		},
 		actions = {
 			open_file = {
